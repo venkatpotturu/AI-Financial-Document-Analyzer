@@ -71,46 +71,40 @@ Copy code
 ```bash
 git clone https://github.com/venkatpotturu/AI-Financial-Document-Analyzer.git
 cd AI-Financial-Document-Analyzer
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 Windows
 
-bash
-Copy code
+'''bash
 python -m venv venv
 venv\Scripts\activate
 Mac / Linux
 
-bash
-Copy code
+'''bash
 python3 -m venv venv
 source venv/bin/activate
-3️⃣ Install Dependencies
-bash
-Copy code
+### 3️⃣ Install Dependencies
+'''bash
 pip install -r requirements.txt
 If Streamlit command is not recognized:
 
-bash
-Copy code
+'''bash
 python -m pip install streamlit
-4️⃣ Environment Variables
+###4️⃣ Environment Variables
 Create a .env file (if required):
 
 env
-Copy code
 OPENAI_API_KEY=your_api_key_here
 ⚠️ Do not upload .env to GitHub.
 
-5️⃣ Run the Application
-bash
-Copy code
+###5️⃣ Run the Application
+'''bash
 python -m streamlit run app.py
-Open in browser:
 
-arduino
-Copy code
+### Open in browser:
+
 http://localhost:8501
-🧪 Application Workflow
+
+###🧪 Application Workflow
 User uploads a document
 
 Text is extracted from the file
@@ -129,7 +123,7 @@ Context-aware response is generated
 
 Conversation history is maintained
 
-📊 Use Cases
+###📊 Use Cases
 Financial document analysis
 
 Annual report understanding
@@ -142,14 +136,12 @@ Academic document Q&A
 
 Large document summarization
 
-❗ Common Issues & Fixes
+###❗ Common Issues & Fixes
 Streamlit not recognized
-bash
-Copy code
+'''bash
 python -m streamlit run app.py
 FAISS installation issue (Windows)
-bash
-Copy code
+'''bash
 pip uninstall faiss
 pip install faiss-cpu
 Module not found error
@@ -157,14 +149,14 @@ Ensure all .py files are in the same directory
 
 Check correct file names and imports
 
-🔒 Security Notes
+###🔒 Security Notes
 .env is excluded via .gitignore
 
 No API keys are hardcoded
 
 Local-only execution
 
-🔮 Future Enhancements
+###🔮 Future Enhancements
 OCR for scanned documents
 
 Multi-file comparison
